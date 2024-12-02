@@ -1,0 +1,409 @@
+.border {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.container-fluid{
+    font-family: "Poppins", sans-serif;
+}
+
+.collogo{
+    /* padding: 0; */
+    margin-left: 15px;
+    padding-right: 3px;
+}
+
+.customrow{
+    margin-top: -70px;
+}
+
+.customcompany{
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    margin-left: 90px;
+    color: #0040af;
+    /* padding-left: 4px;
+    margin-top: 20px; */
+}
+
+dl dt {
+    margin-bottom: 2px;
+}
+
+dl dd {
+    margin-bottom: 2px;
+}
+
+.custom-dt {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.custom-dd {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.custom-dt1 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.custom-dd1 {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.custom-dd2 {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+    color: #0040af;
+}
+
+.custom-dt3 {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.font-bold{
+    font-weight: 800;
+    color: #0040af;
+    text-align: left;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+/* Underline di bawah payment slip */
+.text-underline-double {
+    position: relative;
+    text-decoration: none;
+}
+
+.text-underline-double::before, .text-underline-double::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    border-bottom: 1px solid #000;
+}
+
+.text-underline-double::after {
+    bottom: -2px;
+    right: 0;
+}
+
+/* underline di bawah employe No */
+.text-underline-double1 {
+    position: relative;
+    text-decoration: none;
+}
+.text-underline-double1::before, .text-underline-double1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    border-bottom: 1px solid #000;
+}
+
+.text-underline-double1::after {
+    bottom: -2px;
+}
+
+/* Underline di bawah nomor dan nama */
+.text-underline-double2 {
+    position: relative;
+    text-decoration: none;
+}
+
+.text-underline-double2::before, .text-underline-double2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 10%;
+    bottom: 1px;
+    border-bottom: 1px solid #000;
+}
+
+.text-underline-double2::after {
+    bottom: -2px;
+    right: 10%;
+}
+
+/* Upperline Double */
+.text-double-upper-line {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.text-double-upper-line::before,
+.text-double-upper-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #000;
+}
+
+.text-double-upper-line::before {
+    top: -3px;
+}
+
+.text-double-upper-line::after {
+    top: -6px;
+}
+
+/* Upperline  */
+.text-double-upper-line1 {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.text-double-upper-line1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 5%;
+    border-top: 1px solid #000;
+}
+
+.text-double-upper-line1::before {
+    top: -3px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .container-fluid{
+        font-size: 5px;
+    }
+    .row{
+        font-size: 6px;
+    }
+    .custom-dt{
+        font-size: 4px;
+    }
+    .visible-print {
+        width: 60px;
+        height: 60px;
+    }
+    .border{
+        border: none;
+    }
+    .font-bold{
+        font-size: 12px;
+    }
+    .custom-dt{
+        font-size: 4px;
+    }
+    .custom-dd{
+        font-size: 4px;
+    }
+    .custom-dt1{
+        font-size: 4px;
+    }
+    .custom-dd1{
+        font-size: 4px;
+    }
+    .custom-dd2{
+        font-size: 4px;
+    }
+    .custom-dt3{
+        font-size: 4px;
+    }
+    .visible-print {
+        width: 60px;
+        height: 60px;
+        display: none;
+    }
+    .col-10 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* underline */
+    .text-underline-double::before,
+    .text-underline-double::after {
+        bottom: 1px;
+    }
+    .text-underline-double1::before,
+    .text-underline-double1::after {
+        bottom: 6px;
+    }
+    .text-underline-double2::before,
+    .text-underline-double2::after {
+        bottom: 6px;
+    }
+
+    .text-underline-double::after {
+        bottom: -1px;
+    }
+    .text-underline-double1::after {
+        bottom: 4px;
+    }
+    .text-underline-double2::after {
+        bottom: 4px;
+    }
+
+    /* Upperline */
+    .text-double-upper-line {
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+    }
+    .text-double-upper-line::before,
+    .text-double-upper-line::after {
+        border-top: 1px solid #000;
+    }
+
+    .text-double-upper-line::before {
+        top: -2px;
+    }
+
+    .text-double-upper-line::after {
+        top: -4px;
+    }
+
+    .text-double-upper-line1 {
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .text-double-upper-line1::before {
+        top: -3px;
+    }
+
+    .visible-print {
+        display: none;
+    }
+}
+
+@media print {
+        body {
+            font-size: 10px;
+        }
+
+        /* Atur ukuran halaman PDF ke A4 landscape */
+        @page {
+            size: A4 landscape;
+            margin: 1cm;
+        }
+
+        .container-fluid{
+            font-size: 5px;
+        }
+        .row{
+            font-size: 6px;
+        }
+        .custom-dt{
+            font-size: 4px;
+        }
+        .visible-print {
+            width: 60px;
+            height: 60px;
+        }
+        .border{
+            border: none;
+        }
+        .font-bold{
+            font-size: 12px;
+        }
+        .custom-dt{
+            font-size: 4px;
+        }
+        .custom-dd{
+            font-size: 4px;
+        }
+        .custom-dt1{
+            font-size: 4px;
+        }
+        .custom-dd1{
+            font-size: 4px;
+        }
+        .custom-dd2{
+            font-size: 4px;
+        }
+        .custom-dt3{
+            font-size: 4px;
+        }
+        .visible-print {
+            width: 60px;
+            height: 60px;
+            display: none;
+        }
+        .col-10 {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .text-underline-double::before,
+    .text-underline-double::after {
+    bottom: 1px;
+    }
+    .text-underline-double1::before,
+    .text-underline-double1::after {
+    bottom: 6px;
+    }
+    .text-underline-double2::before,
+    .text-underline-double2::after {
+    bottom: 6px;
+    }
+
+    .text-underline-double::after {
+    bottom: -1px;
+    }
+    .text-underline-double1::after {
+    bottom: 4px;
+    }
+    .text-underline-double2::after {
+    bottom: 4px;
+    }
+
+    /* Upperline */
+    .text-double-upper-line {
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+    }
+    .text-double-upper-line::before,
+    .text-double-upper-line::after {
+        border-top: 1px solid #000;
+    }
+
+    .text-double-upper-line::before {
+        top: -2px;
+    }
+
+    .text-double-upper-line::after {
+        top: -4px;
+    }
+
+    .text-double-upper-line1 {
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .text-double-upper-line1::before {
+        top: -3px;
+    }
+
+    .visible-print {
+        display: none;
+    }
+
+}

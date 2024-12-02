@@ -1,0 +1,263 @@
+.border {
+    border: 1px solid #000; /* Sesuaikan warna dan ketebalan garis sesuai kebutuhan Anda */
+    padding: 5px; /* Sesuaikan padding sesuai kebutuhan Anda */
+}
+
+.container-fluid{
+    font-family: "Poppins", sans-serif;
+}
+dl dt {
+    margin-bottom: 2px;
+}
+
+dl dd {
+    margin-bottom: 2px;
+}
+.custom-dt {
+    font-size: 12px; /* Ganti dengan ukuran font yang Anda inginkan */
+    font-weight: 400;
+}
+.custom-dd {
+    font-size: 12px; /* Ganti dengan ukuran font yang Anda inginkan */
+    font-weight: 400;
+    text-align: right;
+}
+.custom-dt1 {
+    font-size: 12px; /* Ganti dengan ukuran font yang Anda inginkan */
+    font-weight: 600;
+}
+.custom-dd1 {
+    font-size: 12px; /* Ganti dengan ukuran font yang Anda inginkan */
+    font-weight: 600;
+    text-align: right;
+}
+.custom-dd2 {
+    font-size: 12px; /* Ganti dengan ukuran font yang Anda inginkan */
+    font-weight: 600;
+    text-align: right;
+    color: #0040af;
+}
+.custom-dt3 {
+    font-size: 12px; /* Mengatur ukuran font pada elemen <dt> */
+    position: absolute;
+    bottom: 0;
+    font-family: "Poppins", sans-serif;
+}
+.font-bold{
+    font-weight: 800;
+    color: #0040af;
+    text-align: left;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-left: 10px;
+
+}
+.text-underline {
+    text-decoration: underline;
+}
+/* Underline di bawah payment slip */
+.text-underline-double {
+    position: relative;
+    text-decoration: none;
+}
+
+.text-underline-double::before, .text-underline-double::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 10%;
+    bottom: 1px; /* Sesuaikan dengan jarak antara dua garis bawah */
+    border-bottom: 1px solid #000; /* Warna dan ketebalan garis bawah */
+}
+
+.text-underline-double::after {
+    bottom: -2px; /* Mengatur jarak antara dua garis bawah */
+    right: 10%;
+}
+/* underline di bawah employe No */
+.text-underline-double1 {
+    position: relative;
+    text-decoration: none;
+}
+.text-underline-double1::before, .text-underline-double1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px; /* Sesuaikan dengan jarak antara dua garis bawah */
+    border-bottom: 1px solid #000; /* Warna dan ketebalan garis bawah */
+}
+
+.text-underline-double1::after {
+    bottom: -2px; /* Mengatur jarak antara dua garis bawah */
+}
+/* Underline di bawah nomor dan nama */
+.text-underline-double2 {
+    position: relative;
+    text-decoration: none;
+}
+
+.text-underline-double2::before, .text-underline-double2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 10%;
+    bottom: 1px; /* Sesuaikan dengan jarak antara dua garis bawah */
+    border-bottom: 1px solid #000; /* Warna dan ketebalan garis bawah */
+}
+
+.text-underline-double2::after {
+    bottom: -2px; /* Mengatur jarak antara dua garis bawah */
+    right: 10%;
+}
+/* Upperline Double */
+.text-double-upper-line {
+    position: relative;
+    text-decoration: none;
+    display: inline-block; /* Membuat elemen menjadi inline block */
+    font-size: 18px;
+}
+
+.text-double-upper-line::before,
+.text-double-upper-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #000; /* Double upper line dengan ketebalan 2px */
+}
+
+.text-double-upper-line::before {
+    top: -3px; /* Jarak dari atas untuk garis atas pertama */
+}
+
+.text-double-upper-line::after {
+    top: -6px; /* Jarak dari atas untuk garis atas kedua */
+}
+/* Upperline  */
+.text-double-upper-line1 {
+    position: relative;
+    text-decoration: none;
+    display: inline-block; /* Membuat elemen menjadi inline block */
+    font-size: 12px;
+}
+
+.text-double-upper-line1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 5%;
+    border-top: 1px solid #000; /* Double upper line dengan ketebalan 2px */
+}
+
+.text-double-upper-line1::before {
+    top: -3px; /* Jarak dari atas untuk garis atas pertama */
+}
+
+
+@media screen and (max-width: 600px) {
+    .container-fluid{
+        font-size: 5px;
+    }
+    .row{
+        font-size: 6px;
+    }
+    .custom-dt{
+        font-size: 4px;
+    }
+    .visible-print {
+        width: 60px; /* Sesuaikan ukuran sesuai kebutuhan Anda */
+        height: 60px;
+    }
+}
+@media (max-width: 767px) {
+
+    .border{
+    border: none; /* Menghilangkan border */
+    }
+    .font-bold{
+        font-size: 12px;
+    }
+    .custom-dt{
+        font-size: 4px;
+    }
+    .custom-dd{
+        font-size: 4px;
+    }
+    .custom-dt1{
+        font-size: 4px;
+    }
+    .custom-dd1{
+        font-size: 4px;
+    }
+    .custom-dd2{
+        font-size: 4px;
+    }
+    .custom-dt3{
+        font-size: 4px;
+    }
+    .visible-print {
+        width: 60px; /* Sesuaikan ukuran sesuai kebutuhan Anda */
+        height: 60px;
+        display: none;
+    }
+
+}
+@media (max-width: 767px) {
+    /* underline */
+    .text-underline-double::before,
+    .text-underline-double::after {
+    bottom: 1px; /* Ubah jarak untuk perangkat seluler */
+    }
+    .text-underline-double1::before,
+    .text-underline-double1::after {
+    bottom: 6px; /* Ubah jarak untuk perangkat seluler */
+    }
+    .text-underline-double2::before,
+    .text-underline-double2::after {
+    bottom: 6px; /* Ubah jarak untuk perangkat seluler */
+    }
+
+    .text-underline-double::after {
+    bottom: -1px; /* Ubah jarak antara dua garis bawah untuk perangkat seluler */
+    }
+    .text-underline-double1::after {
+    bottom: 4px; /* Ubah jarak antara dua garis bawah untuk perangkat seluler */
+    }
+    .text-underline-double2::after {
+    bottom: 4px; /* Ubah jarak antara dua garis bawah untuk perangkat seluler */
+    }
+
+    /* Upperline */
+    .text-double-upper-line {
+        position: relative;
+        text-decoration: none;
+        display: inline-block; /* Membuat elemen menjadi inline block */
+        font-size: 10px;
+    }
+    .text-double-upper-line::before,
+    .text-double-upper-line::after {
+        border-top: 1px solid #000; /* Mengurangi ketebalan garis atas untuk perangkat seluler */
+    }
+
+    .text-double-upper-line::before {
+        top: -2px; /* Mengurangi jarak dari atas untuk garis atas pertama */
+    }
+
+    .text-double-upper-line::after {
+        top: -4px; /* Mengurangi jarak dari atas untuk garis atas kedua */
+    }
+
+    .text-double-upper-line1 {
+        position: relative;
+        text-decoration: none;
+        display: inline-block; /* Membuat elemen menjadi inline block */
+    }
+    .text-double-upper-line1::before {
+        top: -3px; /* Jarak dari atas untuk garis atas pertama */
+    }
+
+    .visible-print {
+        display: none;
+    }
+}
